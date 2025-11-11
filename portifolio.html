@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bárbara Mota Corda — Portfólio</title>
+  <meta name="description" content="Portfólio de Bárbara Mota Corda — Desenvolvedora Júnior • Sites de divulgação" />
+  <style>
+    :root{
+      --bg:#071026; --card:#081427; --muted:#9aa4b2; --accent:#6EE7B7;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#021025,#071026);color:#e6eef6;}
+    .container{max-width:1000px;margin:36px auto;padding:20px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,#7dd3fc,#a78bfa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#031027;font-size:22px;}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+    nav a:hover{color:var(--accent)}
+    .hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:14px;padding:22px;margin-top:20px;display:flex;gap:20px;align-items:center;}
+    .hero-left{flex:1}
+    .hero-right{width:260px;text-align:center}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chip{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));padding:14px;border-radius:12px}
+    .card h3{margin:0 0 8px 0;font-size:16px}
+    .badges{display:flex;gap:8px;flex-wrap:wrap}
+    .badge{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted)}
+    section{margin-top:28px}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .card.small{padding:12px}
+    .contact-card a{display:inline-block;margin-top:8px;color:var(--accent);text-decoration:none}
+    footer{margin-top:30px;color:var(--muted);font-size:13px;text-align:center;padding:14px 0}
+    @media (max-width:920px){.grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.hero{flex-direction:column;align-items:flex-start}.hero-right{width:100%}}
+    @media (max-width:560px){.grid{grid-template-columns:1fr}header{flex-direction:column;align-items:flex-start;gap:10px}nav a{margin-left:8px}}
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#10b981,#06b6d4);color:#042027;font-weight:600;text-decoration:none;margin-top:8px;}
+    .meta{font-size:13px;color:var(--muted);margin-top:8px}
+    .project-links{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .link{font-size:13px;color:var(--accent);text-decoration:none}
+    .divider{height:1px;background:rgba(255,255,255,0.02);margin:18px 0;border-radius:2px}
+
+    /* WhatsApp floating button */
+    .whatsapp-fab{
+      position:fixed;right:18px;bottom:18px;background:#25D366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+      box-shadow:0 8px 30px rgba(2,6,23,0.45);z-index:999;border:4px solid rgba(255,255,255,0.06);
+    }
+    .whatsapp-fab img{width:28px;height:28px}
+
+    /* small text helpers */
+    .smallmuted{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">BM</div>
+        <div>
+          <h1>Bárbara Mota Corda</h1>
+          <p class="lead">Desenvolvedora Júnior • Sites de divulgação • Brasil</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projetos</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero" id="home">
+        <div class="hero-left">
+          <h2 style="margin:0 0 6px 0">Olá — eu sou a Bárbara 👋</h2>
+          <p class="muted">Crio sites de divulgação, vitrines online e páginas para pequenos negócios. Entrego layouts responsivos, SEO básico e integração com WhatsApp.</p>
+
+          <div class="skills" aria-hidden>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Python (básico)</span>
+            <span class="chip">Git • GitHub</span>
+          </div>
+
+          <div style="margin-top:14px">
+            <a class="btn" href="#projects">Ver Projetos</a>
+          </div>
+             <p class="meta">E-mail: <a class="link" href="mailto:barbaramota191@gmail.com">barbaramota191@gmail.com</a> • WhatsApp: <a class="link" href="https://wa.me/5584998115850" target="_blank">+55 84 99811-5850</a></p>
+        </div>
+
+        <div class="hero-right card small" style="text-align:left">
+          <h3 style="margin-top:0">Serviços rápidos</h3>
+          <ul class="muted" style="margin:6px 0 0 18px">
+            <li>Sites de divulgação para eventos</li>
+            <li>Páginas para lojas & promoções</li>
+            <li>Landing pages para captação</li>
+            <li>Integração com WhatsApp e formulário</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Projects (sites de divulgação) -->
+      <section id="projects">
+        <h2 style="margin-bottom:6px">Sites de Divulgação </h2>
+    
+
+        <div class="grid" aria-live="polite">
+          <!-- Project: Eventos Locais -->
+          <article class="card">
+            <h3>Eventos Locais — "DivulgaEventos"</h3>
+            <p class="muted" style="margin:8px 0">Landing page para divulgação de eventos: banner, agenda, inscrição rápida (integra com WhatsApp) e galeria de fotos.</p>
+            <div class="badges" style="margin-top:10px">
+              <span class="badge">Landing</span>
+              <span class="badge">Formulário → WhatsApp</span>
+              <span class="badge">Responsivo</span>
+            </div>
+            <p class="smallmuted" style="margin-top:8px">Benefício: aumenta inscrições e mensagens diretas pelo WhatsApp.</p>
+           
+          </article>
+
+          <!-- Project: Promoções de Carros -->
+          <article class="card">
+            <h3>Promoções Automotivas — "PromoCars"</h3>
+            <p class="muted" style="margin:8px 0">Página de vitrine para ofertas de carros / seminovos com galeria, filtros simples e botão CTA para WhatsApp.</p>
+            <div class="badges" style="margin-top:10px">
+              <span class="badge">Vitrine</span>
+              <span class="badge">CTA (WhatsApp)</span>
+            </div>
+            <p class="smallmuted" style="margin-top:8px">Benefício: converte visitas em leads pelo WhatsApp.</p>
+    
+          </article>
+
+          <!-- Project: Vitrine de Negócios Locais -->
+          <article class="card">
+            <h3>Vitrine Local — "Vitrine Local"</h3>
+            <p class="muted" style="margin:8px 0">Página institucional simples para pequenos negócios (horário, serviços, contato, mapa e depoimentos).</p>
+            <div class="badges" style="margin-top:10px">
+              <span class="badge">Institucional</span>
+              <span class="badge">SEO Básico</span>
+            </div>
+            <p class="smallmuted" style="margin-top:8px">Benefício: presença online profissional e acesso rápido a contatos.</p>
+    
+          </article>
+
+          <!-- Project: Pet Shop / Clínica -->
+          <article class="card">
+            <h3>PetVitrine — Divulgação para Pet Shops</h3>
+            <p class="muted" style="margin:8px 0">Site com serviços, agendamento rápido via WhatsApp, galeria e promoções mensais.</p>
+            <div class="badges" style="margin-top:10px">
+              <span class="badge">Agendamento</span>
+              <span class="badge">WhatsApp</span>
+            </div>
+            <p class="smallmuted" style="margin-top:8px">Benefício: permite agendar e tirar dúvidas direto no WhatsApp.</p>
+          </article>
+
+          <!-- Project: Restaurante / Food -->
+          <article class="card">
+            <h3>Restaurante / Promoções — "SaborAqui"</h3>
+            <p class="muted" style="margin:8px 0">Página para cardápio, promoções, localização e pedido via WhatsApp (botão direto no menu).</p>
+            <div class="badges" style="margin-top:10px">
+              <span class="badge">Cardápio</span>
+              <span class="badge">Pedidos WhatsApp</span>
+            </div>
+            <p class="smallmuted" style="margin-top:8px">Benefício: facilita pedidos e promoções rápidas com link direto para conversa.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- About & Contact -->
+      <section id="about" class="two-col">
+        <div>
+          <h2>Sobre</h2>
+          <p class="muted"><strong>Bárbara Mota Corda</strong> — Crio sites de divulgação para pequenos negócios e eventos. Entrego páginas responsivas com foco em conversão (WhatsApp / telefone).</p>
+
+          <h3 style="margin-top:12px">Como trabalho</h3>
+          <ol class="muted">
+            <li>Brief rápido (o que precisa)</li>
+            <li>Protótipo / aprovação</li>
+            <li>Entrega e deploy (GitHub Pages / Vercel / Netlify)</li>
+          </ol>
+        </div>
+
+        <aside class="card contact-card small">
+          <h3 style="margin-top:0">Contato</h3>
+          <p class="muted"><strong>E-mail:</strong> <a class="link" href="mailto:barbaramota191@gmail.com">barbaramota191@gmail.com</a><br><strong>WhatsApp:</strong> <a class="link" href="https://wa.me/5584998115850" target="_blank">+55 84 99811-5850</a></p>
+          <p class="muted smallmuted" style="margin-top:8px">Se preferir, clique no ícone verde no canto inferior direito para iniciar uma conversa agora.</p>
+        </aside>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="contact">
+        <h2>Contato / Pedido de Orçamento</h2>
+        <p class="muted">Quer um site de divulgação pronto para seu negócio? Me envie detalhes (tipo de negócio, 3 requisitos e prazo) por WhatsApp ou e-mail.</p>
+
+        <div class="card small" style="margin-top:12px">
+          <h3 style="margin:0">Exemplo de mensagem rápida (WhatsApp)</h3>
+          <p class="muted" style="margin-top:8px">"Olá Bárbara, quero um site de divulgação para meu negócio (nome do negócio). Preciso: 1) Página inicial com CTA WhatsApp, 2) Galeria de fotos, 3) Contato e mapa. Prazo: 7 dias."</p>
+          <p style="margin-top:8px"><a class="btn" href="https://wa.me/5584998115850?text=Olá%20Bárbara%2C%20gostaria%20de%20um%20site%20de%20divulgação%20para%20meu%20negócio." target="_blank">Enviar WhatsApp</a>
+          <a class="btn" href="mailto:barbaramota191@gmail.com?subject=Orçamento%20-%20Site%20de%20Divulgação" style="margin-left:8px;background:linear-gradient(90deg,#f59e0b,#ef4444)">Enviar e-mail</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Bárbara Mota Corda — Sites de Divulgação • Contato: <a class="link" href="mailto:barbaramota191@gmail.com">barbaramota191@gmail.com</a>
+    </footer>
+  </div>
+
+  
+  <a class="whatsapp-fab" href="https://wa.me/5584998115850?text=Olá%20Bárbara%2C%20gostaria%20de%20informações%20sobre%20um%20site%20de%20divulgação." target="_blank" aria-label="Abrir WhatsApp">
+    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><path d='M20.52 3.48A11.94 11.94 0 0 0 12 .5 11.95 11.95 0 0 0 .5 12c0 2.11.55 4.09 1.6 5.86L.5 23.5l5.8-1.53A11.95 11.95 0 0 0 12 23.5c6.63 0 12-5.37 12-12 0-1.99-.5-3.87-1.48-5.52z' fill='%23ffffff' opacity='0.06'/><path d='M17.53 14.49c-.29-.15-1.71-.85-1.98-.95-.27-.1-.47-.15-.67.15-.19.29-.75.95-.92 1.15-.17.19-.33.21-.62.07-.29-.15-1.23-.45-2.35-1.45-.87-.77-1.46-1.72-1.63-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.33.44-.5.15-.17.2-.29.3-.49.1-.19.05-.36-.02-.51-.07-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.51l-.57-.01c-.19 0-.5.07-.76.36-.27.29-1.03 1.01-1.03 2.46 0 1.45 1.05 2.86 1.2 3.05.15.19 2.07 3.3 5.01 4.62 2.94 1.32 2.94.88 3.47.82.53-.06 1.71-.69 1.95-1.37.24-.69.24-1.28.17-1.39-.07-.12-.26-.19-.55-.34z' fill='%23ffffff'/></svg>" alt="WhatsApp">
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+   
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', (ev)=>{
+        ev.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
